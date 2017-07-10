@@ -27,51 +27,24 @@ a:link{
   text-decoration:none;
 }
 
-.imgcentral{
-  background-color:#82c3a6;
-  text-align: center;
-  padding: 10px;
-}
-
-.imgcentral img{
-  width: 100%;
-}
-.imgsecundaria{
+.Galeria{
   background-color: #d5c75f;
   border: solid 1px;
   text-align: center;
   display: flex;
-
+  padding: 10px;
 }
-
-section figure{
-  width: 50%;
+ section div{
+  width: 33%;
 }
-.imagenp1 img{
-  width: 80%;
-  transition-property: rotate box-shadow;
-  transition-duration: 2s, 2s;
-}
-
-.imagenp1 img:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-}
-
-.Odin5 img{
-  width: 80%;
-  transition-property: translate box-shadow;
-  transition-duration: 2s, 2s;
-}
-
-.Odin5 img:hover{
-  transform: translate(5px, 20px);
-  box-shadow: 2px 2px 2px #82c3a6;
+figure img{
+  width: 100%;
 }
 
 img{
   box-shadow:2px 2px 2px #02010a;
 }
+
 
 footer{
   display: flex;
