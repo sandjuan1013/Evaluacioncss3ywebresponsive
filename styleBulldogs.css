@@ -16,8 +16,6 @@ body{
     margin-top: 0%;
   }
 }
-
-
 header{
   border-radius: 10px 10px 0 0;
   background: #5b7989;
@@ -41,51 +39,25 @@ a:link{
   text-decoration:none;
 }
 
-.imgcentral{
-  background-color:#82c3a6;
-  text-align: center;
-  padding: 10px;
-}
-
-.imgcentral img{
-  width: 100%;
-}
-.imgsecundaria{
+.Galeria{
   background-color: #d5c75f;
   border: solid 1px;
   text-align: center;
   display: flex;
-
+  padding: 10px;
 }
 
-section figure{
-  width: 50%;
+ section div{
+  width: 33%;
 }
 
-.imagenp1 img{
-  width: 80%;
-  transition-property: rotate box-shadow;
-  transition-duration: 1s, 1s;
-}
-
-.imagenp1 img:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-}
-
-.Odin5 img{
-  width: 80%;
-  transition-property: translate box-shadow;
-  transition-duration: 1s, 1s;
-}
-
-.Odin5 img:hover{
-  transform: translate(5px, 20px);
-  box-shadow: 2px 2px 2px #82c3a6;
+figure img{
+  width: 100%;
 }
 
 img{
   box-shadow:2px 2px 2px #02010a;
+
 }
 
 footer{
@@ -101,24 +73,23 @@ footer div{
     width: 25%;
 }
 
+#img1{
+  -webkit-filter: blur(10px);
+}
+
+#img2, #img4, #img6{
+  -webkit-filter: grayscale(100%);
+}
+
+#img3{
+  -webkit-filter: sepia(90%);
+}
+
+#img5{
+  -webkit-filter: brightness(20px);
+}
 
 .contenido{
   width: 900px;
   margin: 0 auto;
-}
-
-@media (max-width:900px) {
-  .contenido{
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .imgsecundaria{
-    background-color: #d5c75f;
-    border: solid 1px;
-    text-align: center;
-  }
-  section figure{
-    width: 100%;
-  }
 }
