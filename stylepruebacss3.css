@@ -41,6 +41,10 @@ a:link{
   text-decoration:none;
 }
 
+a:visited{
+  color: white;
+}
+
 .imgcentral{
   background-color:#82c3a6;
   text-align: center;
@@ -94,7 +98,7 @@ footer{
 }
 
 footer div{
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -115,15 +119,14 @@ footer div{
     font-size: 25px;
     }
 
-
+    a:link{
+      color: white;
+      text-decoration: underline;
+    }
   section .imgsecundaria{
     display: block;
     }
-
-  footer{
-    font-size: 15px;
   }
-}
 
 @media (min-width:900px)
  {

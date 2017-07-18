@@ -15,22 +15,23 @@ body{
   100%{
     margin-top: 0%;
   }
-
 }
 
 header{
   border-radius: 10px 10px 0 0;
   background: #5b7989;
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
 h1{
   text-shadow: 2px 2px 2px black;
-  width: 50%;
+  width: 100%;
   padding-left: 30px;
+  text-align: center;
 }
 nav{
-  width: 50%;
+  width: 100%;
   padding: 30px;
   text-align: center;
   font-size: 20px;
@@ -41,15 +42,19 @@ a:link{
   text-decoration:none;
 }
 
+a:visited{
+  color: white;
+}
+
 .Galeria{
   background-color: #d5c75f;
   border: solid 1px;
   text-align: center;
-  display: flex;
+  display: block;
   padding: 10px;
 }
  section div{
-  width: 33%;
+  width: 100%;
 }
 figure img{
   width: 100%;
@@ -60,20 +65,20 @@ img{
 }
 
 footer{
-  display: flex;
+  display: block;
   background-color: #C6d5c5;
   font-size: 20px;
   color: black;
-  padding-left: 30px;
+  padding: 10px;
   border-radius: 0px 0px 10px 10px;
 }
 
 footer div{
-    width: 25%;
+    width: 100%;
 }
 
 #img1{
-  -webkit-filter: blur(10 px);
+  -webkit-filter: blur(10px);
 }
 
 #img2, #img4, #img6{
@@ -85,6 +90,78 @@ footer div{
 }
 
 .contenido{
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width:900px)
+
+  {
+    .contenido{
+  width: 100%;
+  }
+   h1{
+     width: 90%;
+     text-align: center;
+     font-size: 40px;
+   }
+  nav{
+    width: 90%;
+    text-align: center;
+    font-size: 25px;
+    }
+    a:link{
+      color: white;
+      text-decoration: underline;
+    }
+
+  section div{
+    display: block;
+    width: 100%;
+    }
+
+  footer{
+    display: block;
+  }
+}
+
+@media (min-width:900px)
+ {
+   .contenido{
+     width: 100%;
+   }
+   .cabecera{
+     display: flex;
+    }
+   h1{
+     width: 50%;
+     text-align: center;
+     font-size: 30px;
+     margin-top: 20px;
+   }
+   nav{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    }
+
+    .Galeria{
+      display: flex;
+    }
+   section div{
+    width: 33%;
+    }
+
+    figure img{
+      width: 100%;
+    }
+
+   footer{
+     display: flex;
+     }
+
+    .contenido{
+      width: 900px;
+      margin: 0 auto;
+    }
 }
